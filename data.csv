@@ -1,0 +1,9 @@
+statements,topic
+"A neural network is a machine learning model inspired by the human brain featuring interconnected nodes (artificial neurons) that process data identify patterns and learn to make predictions.",introduction
+"In a neural network, the forward pass is the process where input data travels through the layers of neurons—undergoing weighted sums and activation functions—to produce a final output prediction",introduction
+"The backward pass is the process of calculating the gradient of the loss function with respect to the network's weights using the chain rule, allowing the model to update its parameters and minimize error.",introduction
+"Gradient descent is an optimization algorithm used to minimize a network's error by iteratively adjusting its internal weights in the direction that most reduces the cost function.",introduction
+"The ReLU (Rectified Linear Unit) is an activation function that outputs the input directly if it is positive, and zero otherwise, effectively introducing non-linearity while allowing models to train faster by preventing the vanishing gradient problem.",activation
+"The sigmoid function is a mathematical activation function that maps any real-valued input into a range between 0 and 1, typically used in neural networks to introduce non-linearity and represent probabilities.",activation
+"The tanh (hyperbolic tangent) function is a non-linear activation function that maps input values to a range between -1 and 1, making it zero-centered and often helping neural networks converge faster than the standard sigmoid function.",activation
+""
