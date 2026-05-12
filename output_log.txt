@@ -1,0 +1,52 @@
+Using device: cuda
+Loading data...
+Vocabulary Size: 558
+Total Sentences: 47
+
+Starting Training...
+Epoch [001/400] | Loss: 6.2296
+Epoch [020/400] | Loss: 1.8018
+Epoch [040/400] | Loss: 0.4080
+Epoch [060/400] | Loss: 0.1453
+Epoch [080/400] | Loss: 0.0698
+Epoch [100/400] | Loss: 0.0527
+Epoch [120/400] | Loss: 0.0602
+Epoch [140/400] | Loss: 0.0454
+Epoch [160/400] | Loss: 0.0361
+Epoch [180/400] | Loss: 0.0160
+Epoch [200/400] | Loss: 0.0101
+Epoch [220/400] | Loss: 0.0003
+Epoch [240/400] | Loss: 0.0001
+Epoch [260/400] | Loss: 0.0001
+Epoch [280/400] | Loss: 0.0001
+Epoch [300/400] | Loss: 0.0001
+Epoch [320/400] | Loss: 0.0001
+Epoch [340/400] | Loss: 0.0000
+Epoch [360/400] | Loss: 0.0000
+Epoch [380/400] | Loss: 0.0000
+Epoch [400/400] | Loss: 0.0000
+
+--- Testing Decoding ---
+
+Example 1:
+TARGET : the relu ( rectified linear unit ) is an activation function that outputs the input directly if it is positive , and zero otherwise , effectively introducing non - linearity while allowing models to train faster by preventing the vanishing gradient problem .
+DECODED: the relu ( rectified linear unit ) is an activation function that outputs the input directly if it is positive , and zero otherwise , effectively introducing non - linearity while allowing models to train faster by preventing the vanishing gradient problem .
+
+Example 2:
+TARGET : the sigmoid function is a mathematical activation function that maps any real - valued input into a range between 0 and 1 , typically used in neural networks to introduce non - linearity and represent probabilities .
+DECODED: the sigmoid function is a mathematical activation function that maps any real - valued input into a range between 0 and 1 , typically used in neural networks to introduce non - linearity and represent probabilities .
+
+--- Testing Latent Space (Topic Similarity) ---
+
+Topic [ activation]:
+  Sentence A: The Gaussian Error Linear Unit (GELU) is a high-performance activation function ...
+  Sentence B: The Mish activation function is a smooth, non-monotonic function defined as $f(x...
+
+Topic [ loss]:
+  Sentence C: MSE loss is the average of the squared differences between predicted values and ...
+
+Results:
+  Same Topic Pair (A vs B)      - Cosine Similarity: 0.3784 | Cosine Distance: 0.6216
+  Different Topic Pair (A vs C) - Cosine Similarity: -0.1622 | Cosine Distance: 1.1622
+
+Success: The latent representation correctly placed same-topic items closer together!
