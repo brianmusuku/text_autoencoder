@@ -50,3 +50,18 @@ The model demonstrates that even without explicit labels during training, the la
 3. **Weight Generation**: The HyperNetwork (Linear layers) takes the latent vector `z` and generates a weight matrix `W1` and bias `b1`.
 4. **Implicit Decoding**: For each position in the sequence, the pre-computed positional encoding is multiplied by the generated `W1` and added to `b1`, then projected to the vocabulary size to produce logits.
 5. **Loss**: Cross-entropy loss is used to compare the predicted logits with the original input tokens.
+
+## 📜 Citation
+
+If you find this project useful in your research or applications, please consider citing it:
+
+```bibtex
+@misc{hypernetwork-text-autoencoder,
+  author = {Musuku, Brian},
+  title = {HyperNetwork Text Autoencoder},
+  year = {2026},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/brianmusuku/text_autoencoder}}
+}
+```
