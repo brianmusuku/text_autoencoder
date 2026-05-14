@@ -63,5 +63,6 @@ If you find this project useful in your research or applications, please conside
   publisher = {GitHub},
   journal = {GitHub repository},
   howpublished = {\url{https://github.com/brianmusuku/text_autoencoder}}
+  url = {https://github.com/brianmusuku/text_autoencoder/blob/main/README.md}
 }
 ```
